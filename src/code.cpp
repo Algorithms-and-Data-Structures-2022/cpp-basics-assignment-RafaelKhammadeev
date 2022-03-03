@@ -8,7 +8,7 @@ namespace assignment {
 
   // Task 1
   int squared_diff(int left, int right) {
-    int result = (abs(left * left - right * right));
+    int result = (left - right)*(left - right);
     cout << result << endl;
     return 0;
   }
