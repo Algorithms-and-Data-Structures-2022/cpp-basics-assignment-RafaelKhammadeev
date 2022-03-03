@@ -3,13 +3,13 @@
 #include <iostream>   // cout, printf
 #include <algorithm>  // fill, copy
 
+using namespace std;
 namespace assignment {
 
   // Task 1
   int squared_diff(int left, int right) {
-
-    // Write your code here ...
-
+    int result = (abs(left * left - right * right));
+    cout << result << endl;
     return 0;
   }
 
