@@ -41,10 +41,16 @@ namespace assignment {
 
   // Task 5
   int arr_sum(int *arr, int length) {
-
-    // Write your code here ...
-
-    return 0;
+    int i;
+    int result;
+    int count = 0;
+    for (i = 0; i < length; i++) {
+      cout << *(arr + count) << endl;
+      result += *(arr + count);
+      count += 1;
+    }
+    count += 1;
+    return result;
   }
 
   // Task 6
