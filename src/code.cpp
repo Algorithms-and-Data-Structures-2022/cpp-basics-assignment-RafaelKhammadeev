@@ -34,9 +34,13 @@ namespace assignment {
 
   // Task 4
   void swap_args(int *left, int *right) {
-    int change = *left;
-    *left = *right;
-    *right = change;
+    if (left == NULL || right == NULL){ // проверка на нулевой указатель
+      }
+    else{
+      int change = *left;
+      *left = *right;
+      *right = change;
+    }
   }
 
   // Task 5
@@ -56,7 +60,6 @@ namespace assignment {
   // Task 6
   int *find_max_elem(int *arr, int length) {
 
-    // Write your code here ...
 
     return nullptr;
   }
