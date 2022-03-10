@@ -15,12 +15,10 @@ namespace assignment {
 
   // Task 2
   bool check_bit(int mask, int bit_pos) {
-
-    // Write your code here ...
-
-    return false;
+    return (mask >> bit_pos) % 2 == 1;
   }
-  // << с помощью сдвига
+  // << сдвиг влево
+  // >> сдвиг в право
   // Task 3
   int max3(int left, int middle, int right) {
     int i;
@@ -45,23 +43,26 @@ namespace assignment {
 
   // Task 5
   int arr_sum(int *arr, int length) {
-    int i;
-    int result;
-    int count = 0;
-    for (i = 0; i < length; i++) {
-      cout << *(arr + count) << endl;
-      result += *(arr + count);
-      count += 1;
+    int result = 0;
+    for (int i = 0; i < length; i++) {
+      result += arr[i];
     }
-    count += 1;
     return result;
   }
 
   // Task 6
   int *find_max_elem(int *arr, int length) {
-
-
-    return nullptr;
+    int* result = &arr[0];
+    if (&arr == nullptr || length <= 0){
+    }
+    else{
+      for (int i = 1; i < length; i++) {
+        if (*result < arr[i]){
+          result = &arr[i];
+        }
+      }
+      return result;
+    }
   }
 
   // Task 7
