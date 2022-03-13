@@ -6,8 +6,12 @@ using namespace std;
 using namespace assignment;
 
 int main() {
-  bool res = check_bit(8, 4);
-//  int* res = &find_max_elem(nullptr, 5);
-  cout << check_bit(8,3) << endl;
+  int arr[] = {1, 2, 3};
+  int* ptr_arr = &arr[0];
+//  cout << arr_sum(ptr_arr, 3) << endl;
+//  cout << *find_max_elem(ptr_arr, 3) << endl;
+  cout << *allocate_arr(3, 4) << endl;
+  cout << *clone_arr(ptr_arr, 3) << endl;
+  cout << print_kth_elements(ptr_arr, 3, 1, ) << endl;
   return 0;
 }
