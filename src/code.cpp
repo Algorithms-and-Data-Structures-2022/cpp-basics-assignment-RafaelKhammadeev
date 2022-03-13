@@ -126,3 +126,4 @@ namespace assignment {
     os << "Мое сообщение\n";
   }
 }  // namespace assignment
+//
